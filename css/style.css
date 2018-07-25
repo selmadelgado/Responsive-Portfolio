@@ -1,0 +1,363 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #777777;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url(../images/ep_naturalwhite.png);
+	line-height: 150%;
+}
+
+header {
+	background-color: #ffffff;
+	text-align: center;
+	padding: 2px;
+	border-bottom: 1px solid;
+	border-bottom-color: #666666
+    width: 100%;
+}
+
+footer {
+	/*position: fixed;*/
+	bottom: 0;
+	color: #cccccc;
+	background-color: #666666;
+	border-top: 5px solid;
+	border-top-color: #4aaaa5;
+    height: 70px;
+    width: 100%;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 20px;
+}
+
+h1, h2, h3 {
+	display: block;
+	font-family: "Georgia", "Times", "Times New Roman", serif;
+	font-weight: bold;
+	margin: 10px auto;
+	padding: 5px auto;
+}
+
+h1 {
+	font-size: 2em;
+	color: white;
+	background-color: #4aaaa5;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: #4aaaa5;
+}
+
+h3 {
+	font-size: 1em;
+	color: #4aaaa5;
+}
+
+hr {
+	border: none;
+	background-color: #666666;
+	height: 1px;
+}
+
+p {
+	margin: 10px auto;
+}
+
+a {
+	text-decoration:  none;
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: outside;
+	padding-left: 30px;
+	font-size: 0.9em;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;    
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+    /*border-right: 1px solid;*/
+    /*border-left: 1px solid;*/
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+nav a {
+	text-decoration:  none;
+	color: #777777;
+}
+
+.content {
+	min-height: calc(100vh - 70px);		/* 70px is height of footer */
+}
+
+.namearea {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.topname {
+	float: left;
+	padding: 20px 0;
+	margin: 0;
+	width: 200px;
+}
+
+.navitems {
+	float: right;
+}
+
+#hrtop {
+    height: 2px;
+}
+
+.contentarea {
+	width: 960px;
+	margin: 30px auto;
+}
+
+.mainsecarea, .sidebar{
+	background-color: white;
+}
+
+.mainsecarea {
+	float: left;
+	width: 650px;
+	padding: 20px
+}
+
+.sidebar {
+	float: right;
+	width: 270px;
+	padding: 5px 20px;
+}
+
+.sideicon {
+	margin: 20px auto;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.iconimg {
+	width: 50px;
+	height: 50px;
+	margin: auto 5px;
+}
+
+#bioimg {
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 10px 30px 10px 0;
+}
+
+.pfleft {
+	float: left;
+	position: relative;
+
+}
+
+.pfright {
+	float: right;
+	position: relative;	
+}
+
+.pfimg {
+	width: 290px;
+	height: 200px;
+	margin: 15px 0;
+	z-index: 1;
+}
+
+.pfbtn {
+	position: absolute;
+	bottom: 20%;	
+	width: 290px;
+	color: white;
+	background-color: #4aaaa5;
+	font-family: 'Georgia', "Times", "Times New Roman", serif;
+    font-size: 16px;
+	font-weight: 300;
+	padding: 10px 0;
+	z-index: 2;
+}
+
+.intitle {
+	margin-top: 20px;
+}
+
+.inbox {
+	padding: 5px;
+	width: 100%;
+	border: 1px solid #666666;
+}
+
+#subbtn {
+	color: white;
+	background-color: #4aaaa5;
+	padding: 10px 20px;
+}
+
+.inbox:focus {
+	background-color: #ffee88;
+}
+
+a:hover {
+	color: #4aaaa5;
+}
+
+a:visited {
+	color: #777777;
+}
+
+@media screen and (max-width: 980px) {
+	.namearea {
+		width: 740px;
+	}
+
+	.contentarea {
+		width: 740px;
+	}
+
+	.mainsecarea {
+		width: 430px;
+	}
+
+	.sidebar {
+		width: 270px;
+	}
+
+	#bioimg {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+	}
+
+	.pfleft, .pfright {
+		float: none;
+	}
+
+	.pfimg {
+		width: 100%;
+		height: auto;
+	}
+
+	.pfbtn {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.namearea {
+		width: 620px;
+	}
+
+	.contentarea {
+		width: 620px;
+		margin: 30px auto;
+	}
+
+	.mainsecarea {
+		float: none;
+		width: 100%;
+	}
+
+	.sidebar {
+		float: none;
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	#bioimg {
+		float: left;
+		width: 300px;
+		height: 200px;		
+		margin: 10px 30px 10px 0;
+	}
+
+	.pfleft {
+		float: left;
+	}
+
+	.pfright {
+		float: right;
+	}
+
+	.pfimg {
+		width: 270px;
+		height: 190px;
+	}
+
+	.pfbtn {
+		width: 270px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	nav ul li {
+		width: 33.3%
+	}
+
+	.namearea {
+		width: 100%;
+	}
+
+	.topname, .navitems {
+		float: none;
+		width: 100%;
+	}
+
+	.contentarea {
+		width: 90%;
+	}
+
+	.mainsecarea {
+		float: none;
+		width: 100%;
+	}
+
+	.sidebar {
+		float: none;
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	#bioimg {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+	}
+
+	.pfleft, .pfright {
+		float: none;
+	}
+
+	.pfimg {
+		width: 100%;
+		height: auto;
+	}
+
+	.pfbtn {
+		width: 100%;
+	}
+    
+}
+
